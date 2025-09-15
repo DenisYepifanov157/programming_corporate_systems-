@@ -1,0 +1,15 @@
+/home/overgoat/study/programming_corporate_systems/CalculatorProj/bin/Debug/net8.0/CalculatorProj
+/home/overgoat/study/programming_corporate_systems/CalculatorProj/bin/Debug/net8.0/CalculatorProj.deps.json
+/home/overgoat/study/programming_corporate_systems/CalculatorProj/bin/Debug/net8.0/CalculatorProj.runtimeconfig.json
+/home/overgoat/study/programming_corporate_systems/CalculatorProj/bin/Debug/net8.0/CalculatorProj.dll
+/home/overgoat/study/programming_corporate_systems/CalculatorProj/bin/Debug/net8.0/CalculatorProj.pdb
+/home/overgoat/study/programming_corporate_systems/CalculatorProj/obj/Debug/net8.0/CalculatorProj.GeneratedMSBuildEditorConfig.editorconfig
+/home/overgoat/study/programming_corporate_systems/CalculatorProj/obj/Debug/net8.0/CalculatorProj.AssemblyInfoInputs.cache
+/home/overgoat/study/programming_corporate_systems/CalculatorProj/obj/Debug/net8.0/CalculatorProj.AssemblyInfo.cs
+/home/overgoat/study/programming_corporate_systems/CalculatorProj/obj/Debug/net8.0/CalculatorProj.csproj.CoreCompileInputs.cache
+/home/overgoat/study/programming_corporate_systems/CalculatorProj/obj/Debug/net8.0/CalculatorProj.sourcelink.json
+/home/overgoat/study/programming_corporate_systems/CalculatorProj/obj/Debug/net8.0/CalculatorProj.dll
+/home/overgoat/study/programming_corporate_systems/CalculatorProj/obj/Debug/net8.0/refint/CalculatorProj.dll
+/home/overgoat/study/programming_corporate_systems/CalculatorProj/obj/Debug/net8.0/CalculatorProj.pdb
+/home/overgoat/study/programming_corporate_systems/CalculatorProj/obj/Debug/net8.0/CalculatorProj.genruntimeconfig.cache
+/home/overgoat/study/programming_corporate_systems/CalculatorProj/obj/Debug/net8.0/ref/CalculatorProj.dll
