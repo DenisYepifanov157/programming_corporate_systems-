@@ -1,0 +1,15 @@
+/home/overgoat/study/programming_corporate_systems/Calendar/CalendarApp/bin/Debug/net8.0/CalendarApp
+/home/overgoat/study/programming_corporate_systems/Calendar/CalendarApp/bin/Debug/net8.0/CalendarApp.deps.json
+/home/overgoat/study/programming_corporate_systems/Calendar/CalendarApp/bin/Debug/net8.0/CalendarApp.runtimeconfig.json
+/home/overgoat/study/programming_corporate_systems/Calendar/CalendarApp/bin/Debug/net8.0/CalendarApp.dll
+/home/overgoat/study/programming_corporate_systems/Calendar/CalendarApp/bin/Debug/net8.0/CalendarApp.pdb
+/home/overgoat/study/programming_corporate_systems/Calendar/CalendarApp/obj/Debug/net8.0/CalendarApp.GeneratedMSBuildEditorConfig.editorconfig
+/home/overgoat/study/programming_corporate_systems/Calendar/CalendarApp/obj/Debug/net8.0/CalendarApp.AssemblyInfoInputs.cache
+/home/overgoat/study/programming_corporate_systems/Calendar/CalendarApp/obj/Debug/net8.0/CalendarApp.AssemblyInfo.cs
+/home/overgoat/study/programming_corporate_systems/Calendar/CalendarApp/obj/Debug/net8.0/CalendarApp.csproj.CoreCompileInputs.cache
+/home/overgoat/study/programming_corporate_systems/Calendar/CalendarApp/obj/Debug/net8.0/CalendarApp.sourcelink.json
+/home/overgoat/study/programming_corporate_systems/Calendar/CalendarApp/obj/Debug/net8.0/CalendarApp.dll
+/home/overgoat/study/programming_corporate_systems/Calendar/CalendarApp/obj/Debug/net8.0/refint/CalendarApp.dll
+/home/overgoat/study/programming_corporate_systems/Calendar/CalendarApp/obj/Debug/net8.0/CalendarApp.pdb
+/home/overgoat/study/programming_corporate_systems/Calendar/CalendarApp/obj/Debug/net8.0/CalendarApp.genruntimeconfig.cache
+/home/overgoat/study/programming_corporate_systems/Calendar/CalendarApp/obj/Debug/net8.0/ref/CalendarApp.dll

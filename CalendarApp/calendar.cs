@@ -1,0 +1,241 @@
+using System;
+using System.Globalization;
+
+class CalendarApp
+{
+    private static ConsoleColor defaultBackground = ConsoleColor.Black;
+    private static ConsoleColor defaultForeground = ConsoleColor.White;
+    
+    static void Main()
+    {
+        SetupConsole();
+        ShowMainMenu();
+    }
+
+    static void SetupConsole()
+    {
+        Console.BackgroundColor = defaultBackground;
+        Console.ForegroundColor = defaultForeground;
+        Console.Clear();
+        Console.Title = "Консольный календарь";
+    }
+
+    static void ShowMainMenu()
+    {
+        while (true)
+        {
+            Console.Clear();
+            PrintWithColor("=== КОНСОЛЬНЫЙ КАЛЕНДАРЬ ===\n", ConsoleColor.Cyan);
+            Console.WriteLine("1. Определить день недели");
+            Console.WriteLine("2. Проверить високосный год");
+            Console.WriteLine("3. Разница между датами");
+            Console.WriteLine("4. Номер недели");
+            Console.WriteLine("5. Настройки внешнего вида");
+            Console.WriteLine("6. Выход\n");
+
+            Console.Write("Выберите опцию: ");
+            string choice = Console.ReadLine();
+
+            switch (choice)
+            {
+                case "1": DetermineDayOfWeek(); break;
+                case "2": CheckLeapYear(); break;
+                case "3": CalculateDateDifference(); break;
+                case "4": GetWeekNumber(); break;
+                case "5": CustomizeAppearance(); break;
+                case "6": return;
+                default: ShowError("Неверный ввод!"); break;
+            }
+        }
+    }
+
+    static void DetermineDayOfWeek()
+    {
+        Console.Clear();
+        PrintWithColor("Определение дня недели\n", ConsoleColor.Yellow);
+        
+        DateTime date = ReadDate("Введите дату (дд.мм.гггг): ");
+        string dayOfWeek = date.ToString("dddd", new CultureInfo("ru-RU"));
+        
+        PrintWithColor($"Результат: {date:dd.MM.yyyy} - {dayOfWeek}\n", ConsoleColor.Green);
+        WaitForKey();
+    }
+
+    static void CheckLeapYear()
+    {
+        Console.Clear();
+        PrintWithColor("Проверка високосного года\n", ConsoleColor.Yellow);
+        
+        int year = ReadYear("Введите год (гггг): ");
+        bool isLeap = DateTime.IsLeapYear(year);
+        
+        PrintWithColor($"Результат: {year} - {(isLeap ? "високосный" : "не високосный")}\n", 
+            isLeap ? ConsoleColor.Green : ConsoleColor.Red);
+        WaitForKey();
+    }
+
+    static void CalculateDateDifference()
+    {
+        Console.Clear();
+        PrintWithColor("Разница между датами\n", ConsoleColor.Yellow);
+        
+        DateTime firstDate = ReadDate("Введите первую дату (дд.мм.гггг): ");
+        DateTime secondDate = ReadDate("Введите вторую дату (дд.мм.гггг): ");
+        
+        TimeSpan difference = secondDate - firstDate;
+        int days = Math.Abs(difference.Days);
+        
+        PrintWithColor($"Результат: {days} дней\n", ConsoleColor.Green);
+        WaitForKey();
+    }
+
+    static void GetWeekNumber()
+    {
+        Console.Clear();
+        PrintWithColor("Определение номера недели\n", ConsoleColor.Yellow);
+        
+        DateTime date = ReadDate("Введите дату (дд.мм.гггг): ");
+        CultureInfo culture = new CultureInfo("ru-RU");
+        int week = culture.Calendar.GetWeekOfYear(
+            date, 
+            CalendarWeekRule.FirstFourDayWeek, 
+            DayOfWeek.Monday
+        );
+        
+        PrintWithColor($"Результат: Неделя {week}\n", ConsoleColor.Green);
+        WaitForKey();
+    }
+
+    static void CustomizeAppearance()
+    {
+        while (true)
+        {
+            Console.Clear();
+            PrintWithColor("Настройки внешнего вида\n", ConsoleColor.Yellow);
+            Console.WriteLine("1. Изменить цвет текста");
+            Console.WriteLine("2. Изменить цвет фона");
+            Console.WriteLine("3. Сбросить настройки");
+            Console.WriteLine("4. Назад\n");
+
+            Console.Write("Выберите опцию: ");
+            string choice = Console.ReadLine();
+
+            switch (choice)
+            {
+                case "1":
+                    ChangeColor(true);
+                    break;
+                case "2":
+                    ChangeColor(false);
+                    break;
+                case "3":
+                    ResetColors();
+                    break;
+                case "4":
+                    return;
+                default:
+                    ShowError("Неверный ввод!");
+                    break;
+            }
+        }
+    }
+
+    static void ChangeColor(bool isForeground)
+    {
+        Console.Clear();
+        string type = isForeground ? "текста" : "фона";
+        PrintWithColor($"Выбор цвета {type}\n", ConsoleColor.Yellow);
+        
+        Array colors = Enum.GetValues(typeof(ConsoleColor));
+        for (int i = 0; i < colors.Length; i++)
+        {
+            Console.WriteLine($"{i + 1}. {colors.GetValue(i)}");
+        }
+
+        Console.Write($"\nВыберите цвет (1-{colors.Length}): ");
+        if (int.TryParse(Console.ReadLine(), out int index) && index >= 1 && index <= colors.Length)
+        {
+            ConsoleColor newColor = (ConsoleColor)colors.GetValue(index - 1);
+            
+            if (isForeground)
+            {
+                Console.ForegroundColor = newColor;
+                defaultForeground = newColor;
+            }
+            else
+            {
+                Console.BackgroundColor = newColor;
+                defaultBackground = newColor;
+            }
+            Console.Clear();
+            PrintWithColor("Цвет изменен успешно!\n", ConsoleColor.Green);
+        }
+        else
+        {
+            ShowError("Неверный выбор цвета!");
+        }
+        WaitForKey();
+    }
+
+    static void ResetColors()
+    {
+        Console.BackgroundColor = ConsoleColor.Black;
+        Console.ForegroundColor = ConsoleColor.White;
+        defaultBackground = ConsoleColor.Black;
+        defaultForeground = ConsoleColor.White;
+        Console.Clear();
+        PrintWithColor("Настройки сброшены!\n", ConsoleColor.Green);
+        WaitForKey();
+    }
+
+    // Вспомогательные методы
+    static DateTime ReadDate(string prompt)
+    {
+        while (true)
+        {
+            Console.Write(prompt);
+            if (DateTime.TryParseExact(
+                Console.ReadLine(), 
+                "dd.MM.yyyy", 
+                null, 
+                DateTimeStyles.None, 
+                out DateTime result))
+            {
+                return result;
+            }
+            ShowError("Неверный формат даты! Используйте дд.мм.гггг");
+        }
+    }
+
+    static int ReadYear(string prompt)
+    {
+        while (true)
+        {
+            Console.Write(prompt);
+            if (int.TryParse(Console.ReadLine(), out int year) && year >= 1 && year <= 9999)
+            {
+                return year;
+            }
+            ShowError("Неверный год! Введите число от 1 до 9999");
+        }
+    }
+
+    static void PrintWithColor(string text, ConsoleColor color)
+    {
+        Console.ForegroundColor = color;
+        Console.Write(text);
+        Console.ForegroundColor = defaultForeground;
+    }
+
+    static void ShowError(string message)
+    {
+        PrintWithColor($"Ошибка: {message}\n", ConsoleColor.Red);
+        WaitForKey();
+    }
+
+    static void WaitForKey()
+    {
+        PrintWithColor("\nНажмите любую клавишу чтобы продолжить...", ConsoleColor.Gray);
+        Console.ReadKey();
+    }
+}

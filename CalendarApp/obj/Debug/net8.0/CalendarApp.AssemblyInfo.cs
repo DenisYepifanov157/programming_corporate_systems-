@@ -10,12 +10,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("CalculatorProj")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("CalendarApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ed6aa831f00aec9d4eac5c039ce07547605672a5")]
-[assembly: System.Reflection.AssemblyProductAttribute("CalculatorProj")]
-[assembly: System.Reflection.AssemblyTitleAttribute("CalculatorProj")]
+[assembly: System.Reflection.AssemblyProductAttribute("CalendarApp")]
+[assembly: System.Reflection.AssemblyTitleAttribute("CalendarApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Создано классом WriteCodeFragment MSBuild.
