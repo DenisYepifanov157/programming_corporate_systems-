@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/overgoat/study/programming_corporate_systems/CalendarApp/CalendarApp.csproj": {}
+    "/home/overgoat/study/programming_corporate_systems/test/test.csproj": {}
   },
   "projects": {
-    "/home/overgoat/study/programming_corporate_systems/CalendarApp/CalendarApp.csproj": {
+    "/home/overgoat/study/programming_corporate_systems/test/test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/overgoat/study/programming_corporate_systems/CalendarApp/CalendarApp.csproj",
-        "projectName": "CalendarApp",
-        "projectPath": "/home/overgoat/study/programming_corporate_systems/CalendarApp/CalendarApp.csproj",
+        "projectUniqueName": "/home/overgoat/study/programming_corporate_systems/test/test.csproj",
+        "projectName": "test",
+        "projectPath": "/home/overgoat/study/programming_corporate_systems/test/test.csproj",
         "packagesPath": "/home/overgoat/.nuget/packages/",
-        "outputPath": "/home/overgoat/study/programming_corporate_systems/CalendarApp/obj/",
+        "outputPath": "/home/overgoat/study/programming_corporate_systems/test/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/overgoat/.nuget/NuGet/NuGet.Config"

@@ -1,0 +1,15 @@
+/home/overgoat/study/programming_corporate_systems/test/bin/Debug/net8.0/test
+/home/overgoat/study/programming_corporate_systems/test/bin/Debug/net8.0/test.deps.json
+/home/overgoat/study/programming_corporate_systems/test/bin/Debug/net8.0/test.runtimeconfig.json
+/home/overgoat/study/programming_corporate_systems/test/bin/Debug/net8.0/test.dll
+/home/overgoat/study/programming_corporate_systems/test/bin/Debug/net8.0/test.pdb
+/home/overgoat/study/programming_corporate_systems/test/obj/Debug/net8.0/test.GeneratedMSBuildEditorConfig.editorconfig
+/home/overgoat/study/programming_corporate_systems/test/obj/Debug/net8.0/test.AssemblyInfoInputs.cache
+/home/overgoat/study/programming_corporate_systems/test/obj/Debug/net8.0/test.AssemblyInfo.cs
+/home/overgoat/study/programming_corporate_systems/test/obj/Debug/net8.0/test.csproj.CoreCompileInputs.cache
+/home/overgoat/study/programming_corporate_systems/test/obj/Debug/net8.0/test.sourcelink.json
+/home/overgoat/study/programming_corporate_systems/test/obj/Debug/net8.0/test.dll
+/home/overgoat/study/programming_corporate_systems/test/obj/Debug/net8.0/refint/test.dll
+/home/overgoat/study/programming_corporate_systems/test/obj/Debug/net8.0/test.pdb
+/home/overgoat/study/programming_corporate_systems/test/obj/Debug/net8.0/test.genruntimeconfig.cache
+/home/overgoat/study/programming_corporate_systems/test/obj/Debug/net8.0/ref/test.dll

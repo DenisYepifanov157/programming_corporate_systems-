@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xsq0JooLCJNpj9FT/c3P1F1B+BXBgRKiQNeLYmuT9DFv0ShhZHvsBs9wl9NwsXsl1ARubj29nGjzwrAccyim7Q==",
+  "dgSpecHash": "G5jC8TqyYkiYjASPmEnpjJSdrrgjfRsTvFZ4T807o+0uqiE360vllDCW6jKYgCUygHIFtKb/cfpuqESLAfto9A==",
   "success": true,
-  "projectFilePath": "/home/overgoat/study/programming_corporate_systems/Calendar/CalendarApp/CalendarApp.csproj",
+  "projectFilePath": "/home/overgoat/study/programming_corporate_systems/CalendarApp/CalendarApp.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
